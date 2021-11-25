@@ -1,0 +1,262 @@
+/* Основной цвет текста #757575;
+/* Вторичный цвет текста #212121 */
+/* Акцент #2196F3 */
+/* Основной цвет фона #FFFFFF */
+/* Вторичный цвет фона #F5F4FA */
+/* Цвет фона hero #2F303A */
+
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #f5f4fa;
+  --hero-bg-color: #2f303a;
+  --footer-text-color: rgba(255, 255, 255, 0, 6);
+}
+
+/* body */
+
+body {
+  font-family: roboto, sans-serif, Arial, Helvetica, sans-serif;
+  color: var(--primary-text-color);
+  background-color: #ffffff;
+}
+
+/* оформление ссылок в хедере */
+
+.header-contacts .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+/* оформление логотипа */
+
+.logo {
+  font-family: raleway, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--secondary-text-color);
+}
+
+/* оформление спана в логотипе */
+
+.piece-of-logo {
+  color: var(--accent-color);
+}
+
+/* секция - герой */
+
+.hero {
+  color: var(--primary-bg-color);
+  background-color: var(--hero-bg-color);
+}
+
+/* заголовок секции - героя */
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* кнопка секции - героя */
+
+.hero .button {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--primary-bg-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+
+/* заголовок в секции benefits */
+
+.benefits .title {
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* абзацы в секции benefits */
+
+.benefits-text {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+}
+
+/* заголовок секции specialization */
+
+.specialization .title {
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  letter-spacing: 0.03em;
+}
+
+/* фон секции team */
+
+.team {
+  background-color: var(--secondary-bg-color);
+}
+
+/* заголовок секции team */
+
+.team .title {
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  letter-spacing: 0.03em;
+}
+
+/* заголовок h3 секции team */
+
+.team .list-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
+}
+
+/* абзац секции team */
+.team-text {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
+}
+
+/* убираем маркеры со списков */
+
+.list {
+  list-style: none;
+}
+
+/* стили для ссылок в site-nav */
+
+.site-nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--secondary-text-color);
+}
+
+/* убираем подчеркивание в ссылках */
+
+.link {
+  text-decoration: none;
+}
+
+/* цвет в заголовках */
+
+.title,
+.list-title {
+  color: var(--secondary-text-color);
+}
+
+/* фон и цвет текста в футере */
+
+.footer {
+  background-color: var(--hero-bg-color);
+  color: var(--footer-text-color);
+}
+
+/* цвет логотипа в футере */
+
+.footer .logo {
+  color: var(--primary-bg-color);
+}
+
+/* стили для содержимого address */
+
+.address {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--primary-bg-color);
+  font-style: normal;
+}
+
+/* стили для ссылок в футере */
+
+.footer-contacts .link {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: inherit;
+}
+
+/* наведение и фокус на ссылках */
+
+.site-nav .link:hover,
+.header-contacts .link:hover,
+.site-nav .link:focus,
+.header-contacts .link:focus,
+.footer-contacts .link:hover,
+.footer-contacts .link:focus {
+  color: var(--accent-color);
+}
+
+/* меняем цвет кнопки секции - героя при наведении и фокусе */
+
+.hero .button:hover,
+.hero .button:focus {
+  background-color: #188ce8;
+}
+
+/* portfolio.html */
+/* кнопки в секции examples */
+
+.examples-nav .button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.03em;
+  background-color: var(--secondary-bg-color);
+  color: var(--secondary-text-color);
+  cursor: pointer;
+}
+
+/* заголовок в секции examples */
+
+.examples .title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+}
+
+/* абзац в секции examples */
+
+.examples .description {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+}
+
+/* наведение на кнопки */
+
+.examples-nav .button:hover,
+.examples-nav .button:focus {
+  color: var(--primary-bg-color);
+  background-color: var(--accent-color);
+}
+
+/* выделяем текущую страницу в навигации */
+
+.site-nav .current {
+  color: var(--accent-color);
+}
